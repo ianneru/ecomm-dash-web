@@ -1,2 +1,2 @@
-# ecomm-dash-web
-Site de E-commerce com Dashboard e Gráficos em Angular 12
+# Dashboard de E-commerce com gráfico e tabela
+Site de E-commerce com Dashboard e Gráfico em Angular 12
