@@ -1,0 +1,29 @@
+.demo-table {
+    width: 100%;
+  }
+  .mat-elevation-z8{
+    border-radius: 4px;
+  }
+  .docs-example-viewer-title {
+    align-content: center;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    padding: 8px 8px 8px 16px;
+    margin-bottom: 10px;
+  }
+
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  
