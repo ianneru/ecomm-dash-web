@@ -2,7 +2,12 @@
     width: 100%;
   }
   .mat-elevation-z8{
-    border-radius: 4px;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .mat-table{
+    vertical-align: middle;
   }
   .docs-example-viewer-title {
     align-content: center;
@@ -17,6 +22,10 @@
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
     cursor: pointer;
+    font-size:10px;
+  }
+  .mat-header-cell{
+    font-size:11px; 
   }
   
   .mat-row:hover .mat-cell {

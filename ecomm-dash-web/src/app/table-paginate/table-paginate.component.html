@@ -1,6 +1,6 @@
 <div class="mat-elevation-z8">
-    <div class="docs-example-viewer-title">Tabela de pedidos páginada</div>
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    <div class="docs-example-viewer-title">Tabela de pedidos com paginação</div>
+    <table mat-table [dataSource]="dataSource" class=" demo-table">
 
         <ng-container matColumnDef="pedido.numeroIdentificacao">
           <th mat-header-cell *matHeaderCellDef> No Identificação. </th>
@@ -38,8 +38,5 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-  showFirstLastButtons 
-  aria-label="Select page of periodic elements">
-</mat-paginator>
+      <mat-paginator [length]="resultsLength" [pageSize]="20" ></mat-paginator>
 </div>

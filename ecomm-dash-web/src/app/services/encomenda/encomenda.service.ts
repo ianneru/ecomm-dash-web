@@ -20,8 +20,8 @@ export class EncomendaService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getPaginated(): Observable<Encomenda[]> {
-    return this.httpClient.get<Encomenda[]>(`${environment.apiUrl}/api/Encomendas`)
+  getPaginated(page : number): Observable<Encomenda[]> {
+    return this.httpClient.get<Encomenda[]>(`${environment.apiUrl}/api/Encomendas?pageSize=20&pageIndex=`+page)
       .pipe(
         catchError(this.errorHandler)
       )
