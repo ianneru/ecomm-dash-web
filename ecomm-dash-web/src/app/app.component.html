@@ -312,7 +312,9 @@
 
 <div class="content" role="main">
   <div class="card-container">
-    <app-table-paginate></app-table-paginate>
+    <div *ngIf="currentViewer">
+      <app-table-paginate></app-table-paginate>
+    </div>
   </div> 
 </div>
 

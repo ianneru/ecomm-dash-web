@@ -26,6 +26,7 @@ export class AppComponent {
     this.authenticationService.login("Ecommerce", "Ecommerce")
     .pipe(first())
     .subscribe(
+      (res) => { this.currentViewer = res;},
       error => {
         this.error = error;
         this.loading = false;
